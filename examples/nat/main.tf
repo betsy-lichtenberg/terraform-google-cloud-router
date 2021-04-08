@@ -18,7 +18,8 @@ provider "google" {
   version = "~> 3.0"
 }
 
-module "cloud_router" {
+# [START cloudnat_simple_create]
+  module "cloud_router" {
   source = "../../"
 
   name    = "example-router"
@@ -30,3 +31,4 @@ module "cloud_router" {
     name = "example-nat"
   }]
 }
+# [END cloudnat_simple_create]
